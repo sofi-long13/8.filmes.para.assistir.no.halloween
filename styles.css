@@ -1,0 +1,72 @@
+@font-face{
+    font-family: titulo;
+    src: url(./bloody_scary/Bloody\ Scary.ttf)
+
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#home{
+    background-image: url();
+    font-family: titulo;
+    color: #6a0202e5;
+    text-align: center;
+    background-size: cover; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+
+}
+
+time{
+    color:#6a0202e5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-small;
+}
+
+body{
+    background-color: #0d0c0c;
+    color: aliceblue;
+    text-align: justify;
+}
+p{
+    text-align:justify;
+    margin: 2%;
+
+}
+
+h2{
+    margin: 1.5%;
+
+}
+.galeria{
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    gap: 0.1px;
+}
+
+.galeria div{
+    flex: 1;
+    background-size: cover;
+    background-position: center center;
+    transition: all 0.5s cubic-bezier(.31,.87,.12,-0.53);
+}
+
+.galeria div:hover{
+    flex: 8;
+    filter: saturate(90%);
+
+}
+
+.galeria:hover div:not(:hover){
+    filter:grayscale(100%) opacity(90%);
+
+}
+
